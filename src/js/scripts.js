@@ -1,7 +1,9 @@
-// This is where you should write all JavaScript
-// for your project. Remember a few things as you start!
-// - Use let or const for all variables
-// - Do not use jQuery - use JavaScript instead
-// - Do not use onclick - use addEventListener instead
-// - Run npm run test regularly to check autograding
-// - You'll need to link this file to your HTML :)
+// Select the paragraph and button elements
+const paragraph = document.querySelector('.show');
+const toggleButton = document.getElementById('toggle-button');
+
+// Add a click event listener to the button
+toggleButton.addEventListener('click', () => {
+	// Toggle the 'hidden' class on the paragraph
+	paragraph.classList.toggle('hidden');
+});
